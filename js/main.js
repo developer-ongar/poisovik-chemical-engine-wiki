@@ -30,3 +30,10 @@ const initApp = () => {
   form.addEventListener("submit", submitTheSearch);
 };
 
+// Procedural "workflow" function
+const submitTheSearch = (event) => {
+  event.preventDefault();
+  deleteSearchResults();
+  processTheSearch();
+  setSearchFocus();
+};
