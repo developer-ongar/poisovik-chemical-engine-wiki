@@ -14,3 +14,10 @@ export const retrieveSearchResults = async (searchTerm) => {
   }
   return resultArray;
 };
+
+const getWikiSearchString = (searchTerm) => {
+  const maxChars = getMaxChars();
+  const rawSearchString = `https://ru.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${searchTerm}&gsrlimit=20&prop=pageimages|extracts&exchars=${maxChars}&exintro&explaintext&exlimit=max&format=json&origin=*`;
+  const searchString = encodeURI(rawSearchString);
+  return searchString;
+};
