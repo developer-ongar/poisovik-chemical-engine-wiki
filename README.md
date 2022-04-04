@@ -2,7 +2,7 @@
 
 **You can Remix this project on Glitch by clicking the button above.**
 
-✅ [Check out my YouTube Channel with all of my tutorials](https://www.youtube.com/DaveGrayTeachesCode).
+✅ [Check YouTube tutorials](https://www.youtube.com/DaveGrayTeachesCode).
 
 **Description:**
 
