@@ -37,3 +37,14 @@ const submitTheSearch = (event) => {
   processTheSearch();
   setSearchFocus();
 };
+
+// Procedural
+const processTheSearch = async () => {
+  clearStatsLine();
+  const searchTerm = getSearchTerm();
+  if (searchTerm === "") return; //TODO:
+  const resultArray = await retrieveSearchResults(searchTerm);
+  if (resultArray.length) buildSearchResults(resultArray);
+  setStatsLine(resultArray.length);
+};
+
